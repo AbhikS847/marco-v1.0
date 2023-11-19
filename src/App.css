@@ -1,38 +1,122 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Agbalumo&family=Montserrat&family=Roboto&display=swap');
+
+/* Media query for mobile devices */
+@media (max-width: 768px) {
+  .offcanvas-body{
+    padding:0.5rem;
+    margin:0;
+  }
+  
+  .nav-link{
+    margin:0!important;
+    border-bottom:2px solid #dedede9d!important;
+    padding:1.25rem!important;
+    font-size:1.2rem!important;
+  }
+
+  .background-container {
+    height:26vh!important;
+    background-size: contain!important;
+  }
+
+  .notfound-subheading{
+    font-size:18px!important;
+    padding:16px;
+  }
+
+}
+
+@media (max-width: 1024px) {
+  .background-container {
+    height:30vh!important;
+    background-size: cover!important;
+  }
+}
+
+
+body{
+  font-family: 'Montserrat', sans-serif;
+}
+
+.bg-body-custom{
+  background-color: #fff;
+}
+
+.offcanvas-header{
+  background-color:#F1AF4E;
+  color:#fff;
+}
+
+.offcanvas-body{
+  background-color:#fff;
+  color:#F1AF4E;
+}
+
+.navbar-brand{
+  color:#F1AF4E !important;
+}
+
+.nav-link{
+  font-size:18px;
+  border-bottom:2px solid #dedede9d;
+  color:#F1AF4E !important;
+}
+
+.active{
+  color:#fff !important;
+  background-color: #ec9a1e;
+}
+
+.mobile-nav, .active-mobile{
+  color:#ec9a1e !important;
+  font-weight: 600;
+  border-left:4px solid #ec9a1e;
+}
+
+.brand-color{
+  color:#F1AF4E
+}
+
+.jumbotron {
+  font-family: 'Montserrat', sans-serif;
+  padding: 150px 0;
+  background-size: cover;
   text-align: center;
+  color: #fff;
+  position: relative;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.cursive{
+  font-family: 'Agbalumo';
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
+.background-container {
+  position: relative;
+  height: 75vh; /* Set the height of the container to 100% of the viewport height */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   flex-direction: column;
-  align-items: center;
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  text-align: center;
+  color: white; /* Set text color to contrast with the background */
 }
 
-.App-link {
-  color: #61dafb;
+.nav-link{
+  margin-left:25px;
+  padding-right:16px!important;
+  padding-right:16px!important;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.notfound-subheading{
+  font-size:20px;
+  padding:16px;
+}
+
+.notfound-footer{
+  font-size:20px;
+  padding:16px;
 }
